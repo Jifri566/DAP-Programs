@@ -1,0 +1,61 @@
+tup= ('cse','it','mech')
+print(tup)
+tup1=(1,23,4,5,5,6)
+print(tup1)
+tup2=("abc","def")
+print(tup2)
+tup3="hema","latha"
+print(tup3)
+ 
+tup1 = ()
+print(tup1)
+ 
+tup1 = '(24)'
+print(tup1)
+ 
+
+tup1 = (24)
+print(tup1)
+ 
+tup= ('cse','it','mech','ece','electrical')
+print(tup[0])
+print(tup[2])
+print(tup[2:5])
+ 
+tup1= ('cse','it','mech','ece','electrical')
+print(tup1)
+del(tup1) 
+print(tup1)
+ 
+tup1= ('cse','it','mech','ece','electrical')
+print(tup1)
+tup2= ('Mohiyadeen','sheikh','jifri')
+print(tup2)
+tup3=tup1+tup2
+print(tup3)
+
+ 
+tup1= ('cse','it','mech','ece','electrical')
+print(tup1)
+print("value at 3rd loc= ",tup1[3])
+tup1[3]="hema" #not allowed ,update will not work in tuples
+print("UPDATED value at 3rd loc= ",tup1[3])
+ 
+
+tup1= ('cse','it','mech','ece','electrical')
+print(tup1)
+tup2= ('Mohiyadeen','sheikh','jifri')
+print(tup2)
+a=len(tup1)
+b=len(tup2)
+print(a)
+print(b)
+print(len(tup1))
+print(len(tup2))
+ 
+tup1= ('cse','it','ece','electrical','mech','xyh',)
+print(tup1)
+tup2= ('Mohiyadeen','sheikh','jifri')
+print(tup2)
+print(max(tup1))
+print(min(tup1))
