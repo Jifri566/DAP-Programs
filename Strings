@@ -1,0 +1,145 @@
+var1 = 'Hello World!'
+var2 = "Python Programming"
+print(var1," ",var2)
+ 
+var1 = 'Hello World!'
+var2 = "Python Programming"
+
+print (var1[0])
+print (var2[1:5])
+ 
+var1 = 'Hello World!'
+print ("Updated String :- ", var1[0:6] + 'jifri' + var1[5:11])
+ 
+str1 = input("Enter your own String : ")
+
+str2 = str1
+str3 = str1[:]
+str4 = str1[2:6]
+
+print("The Final String : Str2  = ", str2)
+print("The Final String : Str3  = = ", str3)
+print("The Final String : Str4  = = ", str4)
+ 
+#Python String capitalize() method returns a copy of the string with only its first character capitalized.
+str = "this is the string example....wow!!!";
+print ("str.capitalize() : ", str.capitalize())
+ 
+#center() returns centered in a string of length width. Padding is done using the specified fillchar. Default filler is a space.
+str = "this is string example....wow!!!"
+print ("str.center(40, 'a') : ", str.center(40, '*'))
+ 
+#count() returns the number of occurrences of substring sub in the range [start, end]. 
+#str.count(sub, start= 0,end=len(string))
+str = "This is the string example....wow!!!";
+
+sub = "i";
+print ("str.count(sub, 3, 60) : ", str.count(sub, 3, 60))
+sub = "s";
+print ("str.count(sub) : ", str.count(sub))
+ 
+#find() determines if string str occurs in string, or in a substring of string if starting index beg and ending index end are given.
+#str.find(str, beg=0, end=len(string))
+str1 = "This is string is example....wow!!!";
+str2 = "is";
+print (str1.find(str2))
+print (str1.find(str2, 10))
+print (str1.find(str2, 40))
+ 
+#index() determines if string str occurs in string or in a substring of string if starting index beg and ending index end are given.
+str1 = "This is string exam example....wow!!!";
+str2 = "exam";
+print (str1.index(str2))
+print (str1.index(str2, 16,32))
+ 
+#isalnum() checks whether the string consists of alphanumeric characters.
+str = "thisis2021";  # No space in this string
+print (str.isalnum())
+str = "this is string example....wow!!!";
+print (str.isalnum())
+ 
+str = "pothahemalatha";  # No space & digit in this string
+print (str.isalpha())
+str = "this is string example....wow!!!";
+print (str.isalpha())
+ 
+str = "123456";  # Only digit in this string
+print (str.isdigit())
+str = "this is string example....wow!!!";
+print (str.isdigit())
+ 
+str = " THIS is string example....wow!!!"; 
+print (str.islower())
+str = "this is string example....wow!!!";
+print (str.islower())
+ 
+str = "this2009";  
+print (str.isnumeric())
+str = "23443434";
+print (str.isnumeric())
+ 
+str = "  "; 
+print (str.isspace())
+str = "This is string example....wow!!!";
+print (str.isspace())
+ 
+str = "This Is String Example...Wow!!!";
+print (str.istitle())
+
+str = "This is string example....wow!!!";
+print (str.istitle())
+ 
+str = "THIS IS STRING EXAMPLE....WOW!!!"; 
+print (str.isupper())
+str = "THIS is string example....wow!!!";
+print (str.isupper())
+ 
+#join() returns a string in which the string elements of sequence have been joined by str separator.
+s = " * * ";
+seq = ("abc", "bttt", "cqweqe"); # This is sequence of strings.
+print (s.join( seq ))
+ 
+str = "this is string example....wow!!!";
+print ("Length of the string: ", len(str))
+ 
+#lstrip() returns a copy of the string in which all chars have been stripped from the beginning of the string(default whitespace characters)
+str = "     this is the string example....wow!!!     ";
+print (str.lstrip())
+str = "88888888this is string example....wow!!!999999";
+print (str.lstrip('8'))
+print (str.rstrip('9'))
+ 
+str = "THIS IS STRING EXAMPLE....WOW!!!";
+print (str.lower())
+ 
+#returns largest character
+str = "check....wow!!!";
+print ("Max character: " + max(str))
+str = "hemas....!!!";
+print ("Max character: " + max(str))
+ 
+str = "this-is-real-string-example....wow!!!";
+print ("Min character: " + min(str))
+str = "this-is-a-string-example....wow!!!";
+print ("Min character: " + min(str))
+ 
+#str.replace(old, new[, max])
+str = "that is string example....wow!!! that is really string"
+print (str.replace("is", "was"))
+print (str.replace("is", "was", 3))
+ 
+str = "this is string example....wow!!!";
+print (str.startswith( 'this' ))
+print (str.startswith( 'is', 2, 4 ))
+print (str.startswith( 'this', 0, 3))
+ 
+str = "this is string example....wow!!!";
+print ("str.capitalize() : ", str.upper())
+ 
+str = "this is string example....wow!!!";
+print (str.swapcase())
+ 
+str = "this is string example....wow!!!";
+print (str.swapcase())
+str = "THIS IS STRING EXAMPLE....WOW!!!";
+print (str.swapcase())
