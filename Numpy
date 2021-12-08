@@ -1,0 +1,82 @@
+import numpy as npa 
+npa= npp.array([1, 2, 3])
+print(npa)
+
+ 
+import numpy as npp
+a = npp.array([[1 , 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+print(a)
+ 
+import numpy as np
+a=np.zeros(2)
+print(a)
+ 
+import numpy as np
+a=np.ones(4)
+print(a)
+ 
+import numpy as np
+ab=np.empty(4)
+print(ab)
+ 
+import numpy as np
+a=np.arange(7)
+Print(a)
+ 
+import numpy as np
+a=np.arange(2,9,2)
+print(a)
+ 
+y = np.ones(2, dtype=int)
+print(y)
+y
+ 
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+print(arr)
+ 
+a = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+print(a)
+a=np.delete(a, 1)
+print(a)
+ 
+a = np.array([19, 22, 34, 14, 55, 76, 47, 8])
+print(a)
+a=np.sort(a)
+print(a)
+ 
+import numpy as np
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+a=arr.ndim
+print(arr) 
+print("dimensions = ", a)
+ 
+import numpy as np
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[11, 22, 33], [44, 55, 66]]])
+a=arr.ndim
+b=arr.size
+print(arr) 
+print("dimensions = ", a)
+print("size = ", b)
+ 
+import numpy as np
+a = np.array(42)
+b = np.array([1, 2, 3, 4, 5])
+c = np.array([[1, 2, 3], [4, 5, 6]])
+d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+print(a)
+print("dimension= ", a.ndim)
+print(b)
+print("dimension= ", b.ndim)
+print(c)
+print("dimension= ", c.ndim)
+print(d)
+print("dimension= ", d.ndim)
+ 
+import numpy as np
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+print(arr.shape)
+ 
+a = np.arange(6)
+print(a)
+b = a.reshape(3,2)
+print(b)
