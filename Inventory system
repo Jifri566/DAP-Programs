@@ -1,0 +1,45 @@
+def login(name,pswd):
+    print("Username",name)
+    print("Password", pswd)
+    return;
+def hardware():
+    print("Welcome to hardware components of simtronics")
+    return;
+def software():
+    print("Welcome to software components of simtronics")
+    return;
+
+user=input("Enter your username: ")
+password=input("Enter your password: ")
+login(user,password)
+
+choice=int(input("________________Welcome to Simtronics______________\nLooking for software and hardware components ? Press 1 for software and 2 for hardware\n"))
+           
+if choice==1:
+           software() 
+elif choice==2:
+           hardware()
+else:
+           print("NOT VALID!! Enter either 1 or 2") 
+if choice==1:
+    print("All kinds of OS.Please refer to the instructions below.")
+elif choice==2:    
+    print("1.keyboard ---Rs.200\n 2.mouse ---Rs.300\n 3.CPU ---Rs.2000\n 4.Sound card ---Rs.1000\n 5.Monitor ---Rs.30000")
+    option=int(input("Enter the respective number from the above list to buy: "))
+    if(option==1):
+        kbs=input("Enter how many keyboards u want to buy: ")
+        print("YOUR ORDER HAS BEEN PLACED SUCCESSFULLY")
+    elif(option==2):
+        mouse=input("Enter how many mouse u want to buy: ")
+        print("YOUR ORDER HAS BEEN PLACED SUCCESSFULLY")
+    elif(option==3):
+        cpu=input("Enter how many cpu u want to buy: ")
+        print("YOUR ORDER HAS BEEN PLACED SUCCESSFULLY")
+    elif(option==4):
+        scard=input("Enter how many sound card u want to buy: ")
+        print("YOUR ORDER HAS BEEN PLACED SUCCESSFULLY") 
+    elif(option==5):
+        mntr=input("Enter how many monitors u want to buy: ")
+        print("YOUR ORDER HAS BEEN PLACED SUCCESSFULLY")  
+    else:
+        print("PLEASE chcek the items available and re-enter the item")
