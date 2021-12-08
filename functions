@@ -1,0 +1,85 @@
+def hello (str):
+     print("in function   " + str)
+     print("after printing in function definition")
+     return;
+     print("1")
+print("2")
+hello("JIFRI")
+hello("JIFRI")
+print("3")
+ 
+def changeme( mylist ):
+   mylist.append([1,2,3,4]);
+   print ("Values inside the function: ", mylist)
+   return;
+mylist = [10,20,30];
+changeme( mylist );
+print ("Values outside the function: ", mylist)
+ 
+def changeme( mylist ):
+    print ("BEFORE CHANGESValues inside the function: ", mylist)
+    mylist = [1,2,3,4]; 
+    print ("AFTER CHANGES Values inside the function: ", mylist)
+    return
+mylist1 = [10,20,30];
+changeme( mylist1 );
+print ("Values outside the function: ", mylist1)
+ 
+def printme( str ):
+     print (str)
+     return;
+printme( str = "My string")
+     
+def printinfo( name, age ):
+    print ("Name: ", name)
+    print ("Age ", age)
+    return;
+printinfo( age=50, name="miki" )
+ 
+def printinfo( name, age ):
+    print ("Name: ", name)
+    print ("Age ", age)
+    return;
+printinfo( "miki",50 )
+ 
+def printinfo( name, age = 35 ):
+    print ("Name: ", name)
+    print ("Age ", age)
+    return;
+printinfo( age=50, name="miki" )
+printinfo( name="miki" )
+ 
+def printinfo( name, age ):
+    print ("Name: ", name)
+    print ("Age ", age)
+    return;
+printinfo( 50, "miki" )
+ 
+def printinfo( arg1, *vartuple ):
+     print ("Output is: ")
+     print ("arg1==",arg1)
+     for var in vartuple:
+        print (var)
+     return;
+printinfo( 10,78 )
+printinfo( 70, 60, 50,90 )
+ 
+sum = lambda arg1, arg2: arg1 + arg2;
+print ("Value of total : ", sum( 10, 20 ))
+print ("Value of total : ", sum( 20, 20 ))
+ 
+
+def sum( arg1, arg2 ):
+    total = arg1 + arg2
+    print ("Inside the function : ", total)
+    return total;
+total1 = sum( 10, 20 );
+print ("Outside the function : ", total1 )
+ 
+total = 99; 
+def sum( arg1, arg2 ):
+    total = arg1 + arg2; 
+    print ("Inside the function local total : ", total)
+    return total;
+sum( 10, 20 );
+print ("Outside the function global total : ", total )
