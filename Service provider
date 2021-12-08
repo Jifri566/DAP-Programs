@@ -1,0 +1,13 @@
+rech=str(input("\"Do you want to recharge?\n Y-Yes and any key-No\n"))
+if rech=='Y' or rech=='y':
+  opt=int(input("Press 1 for prepaid and any key for postpaid\n"))
+  if opt==1:
+        number=int(input("Enter mobile no"))
+        operator=int(input("Choose your operator from below options\n1. Jio \n2. Airtel\n3.Bsnl\n"))
+        if(operator=='1' or '2'):   
+            amount=int(input("Choose a recharge amount:\n399 : 1.5 GB data/day for 30 days\n 499 : 1 GB data/day for 60 days\n 99 : 1 GB data/day for 15 days\nEnter any amount that you want to recharge\n"))
+            confirm=int(input("Press 1 to confirm and any key to cancel:"))
+            if confirm==1:
+                print("SUCCESSFULL!!\nThe mobile number {}  has been succesfully recharged with amount {} \nThank you !!".format(number,amount))
+            else:
+                print("Your payment process is cancelled!!")
