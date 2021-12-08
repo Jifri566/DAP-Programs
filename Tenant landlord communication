@@ -1,0 +1,32 @@
+print("Welcome to LOTUS APARTMENTS")
+c=input("would you like to rent my home in LOTUS APARTMENTS ?\n")
+if c=='y' or c=='Y' :
+    print("Now we request you to pay an advance of Rs.1,00,000 ")
+    print("Remaining bills like current bills ,water charges,maintenance charges are to be paid by you")
+    Duration=input("Enter for how many months or years you want to rent: (3months/6months/1 year/more than 1 year)\n")
+    def threemonths():
+        print("Rent for 3 months:Rs.30,000")
+        print("Payable amount:Rs.30,000")
+        print("Thank you !!!")
+    def sixmonths():
+        print("Rent for 6 months:Rs.60,000")
+        print("Payable amount:Rs.60,000")
+        print("Thank you !!!")
+    def oneyear():
+        print("Rent for 1 year:Rs.1,20,000")
+        print("Payable amount:Rs.1,20,000")
+        print("Thank you !!!")
+    def moreyears():
+        print("Please contact the reception number 9 for the details")
+        print("Thank you !!!") 
+    if Duration=='3months':
+        threemonths()
+    if Duration=='6months':
+        sixmonths()
+    if Duration=='oneyear':
+        oneyear()
+    if Duration=='moreyears':
+        moreyears()
+    
+elif c=='n' or c=='N':
+    print("*******************Thank you for visiting LOTUS APARTMENTS*****************")
