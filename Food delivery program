@@ -1,0 +1,26 @@
+def login(name,pswd):
+    print("Username:",name)
+    print("Password", pswd)
+    return;
+
+def veg():
+    print("Welcome to veg restaurant")
+    return;
+
+def nonveg():
+    print("Welcome to non-veg restaurant")
+    return;
+
+user=input("enter your username")
+password=input("enter your password")
+login(user,password)
+
+choice=int(input("looking for veg or non-veg restaurants, press 1 for veg and 2 for non-veg\n"))
+           
+if choice==1:
+           veg() 
+elif choice==2:
+           nonveg()
+else:
+    print("Please enter valid option")    
+
